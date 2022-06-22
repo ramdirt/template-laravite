@@ -6,7 +6,7 @@ Head
         content="About my template"
         head-key="description"
     )
-section.container.max-w-screen-xl.mx-auto.p-3.bg-slate-200
+section.container.mx-auto.p-3.mt-5.bg-slate-100.rounded-md
     slot
 </template>
 

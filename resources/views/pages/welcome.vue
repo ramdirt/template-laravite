@@ -1,14 +1,22 @@
 <template lang="pug">
-h1 Hello World
-p {{ statusState }}
-p {{ statusInertia }}
-p {{ count }}
-Link.link(
-  href="/"
-) На главную
-button.btn-primary(
-  @click="increaseCount(5)"
-) Добавить 5
+Row
+  Col(span="12")
+    Title Template 2
+Row
+  Col(span="4")
+    p {{ statusState }}
+    p {{ statusInertia }}
+    p {{ count }}
+  Col(span="12")
+    Button(
+      type="primary"
+      @click="increaseCount(5)"
+    ) Добавить 5
+Row.mt-5
+  Col(span="12")
+    Link(
+      href="/"
+    ) Пример ссылки
 </template>
 
 <script setup>
